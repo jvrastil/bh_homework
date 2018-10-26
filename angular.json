@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bh-homework": {
+    "bohemia-interactive-homework": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bh-homework",
+            "outputPath": "dist/bohemia-interactive-homework",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bh-homework:build"
+            "browserTarget": "bohemia-interactive-homework:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bh-homework:build:production"
+              "browserTarget": "bohemia-interactive-homework:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bh-homework:build"
+            "browserTarget": "bohemia-interactive-homework:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
         }
       }
     },
-    "bh-homework-e2e": {
+    "bohemia-interactive-homework-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bh-homework:serve"
+            "devServerTarget": "bohemia-interactive-homework:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bh-homework:serve:production"
+              "devServerTarget": "bohemia-interactive-homework:serve:production"
             }
           }
         },
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "bh-homework"
+  "defaultProject": "bohemia-interactive-homework"
 }
