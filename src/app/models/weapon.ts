@@ -13,7 +13,7 @@ export class Weapon {
             this.name = model.name;
             this.rifle = new Rifle(model.rifle);
             this.optics = new Optics(model.optics);
-            this.ammunition = new Ammunition(model.ammunitionType);
+            this.ammunition = new Ammunition(model.ammunition);
         }
     }
 }
