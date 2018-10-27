@@ -1,0 +1,10 @@
+[{
+    "magnification": 6,
+    "name": "Acog scope",
+    "image": "assets/pictures/acog_scope.png"
+  },
+  {
+    "magnification": 1,
+    "name": "Red dot scope",
+    "image": "assets/pictures/red_dot_scope.png"
+  }]

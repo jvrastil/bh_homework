@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+.selected {
+  border: 3px solid #0275d8;
+  border-radius: 4px;
+}
+
+  div .ui-button-text-icon-left .ui-button-text {
+    padding: .25em 1em .25em 1em; 
+}
+
+div .ui-carousel-viewport {
+  padding: 4px;
+}
+
+body .ui-state-disabled, body .ui-dialog-content .ui-widget:disabled {
+  opacity: 1;
+}

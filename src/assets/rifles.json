@@ -1,0 +1,10 @@
+[{
+    "description": "AAAA",
+    "name": "AK 47",
+    "image": "assets/pictures/ak47.png"
+},
+{
+    "description": "BBBB",
+    "name": "M16",
+    "image": "assets/pictures/m16.png"
+}]
