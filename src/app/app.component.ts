@@ -74,7 +74,7 @@ export class AppComponent {
   }
 
   private loadAllRifles() {
-    this.http.get('../assets/rifles.json')
+    this.http.get('assets/rifles.json')
       .subscribe(response => {
         this.rifles = (response as any[]).map(a => new Rifle(a));
         this.rifleItems = this.mapSelectItems(this.rifles);
@@ -82,7 +82,7 @@ export class AppComponent {
   }
 
   private loadAllOptics() {
-    this.http.get('../assets/optics.json')
+    this.http.get('assets/optics.json')
       .subscribe(response => {
         this.optics = (response as any[]).map(a => new Optics(a));
         this.opticsItems = this.mapSelectItems(this.optics);
@@ -90,7 +90,7 @@ export class AppComponent {
   }
 
   private loadAllAmmunitions() {
-    this.http.get('../assets/ammunitions.json')
+    this.http.get('assets/ammunitions.json')
       .subscribe(response => {
         this.ammunitions = (response as any[]).map(a => new Ammunition(a));
         this.ammunitionItems = this.mapSelectItems(this.ammunitions);
@@ -112,7 +112,9 @@ export class AppComponent {
 
   loadFromLocalStorage() {
     try {
-      this.weapon = new Weapon(JSON.parse(localStorage.getItem('weapon')));
+      const jsonObj = JSON.parse(localStorage.getItem('weapon'));
+      this.weapon = new Weapon(jsonObj);
+      this.originalWeapon = new Weapon(jsonObj);
       console.log('Loaded from LS', this.weapon);
     } catch {
       console.log('Local storage is not supported.');

@@ -1,11 +1,11 @@
-.selected {
+/* .selected {
   border: 3px solid #0275d8;
   border-radius: 4px;
 }
 
   div .ui-button-text-icon-left .ui-button-text {
     padding: .25em 1em .25em 1em; 
-}
+} */
 
 div .ui-carousel-viewport {
   padding: 4px;
@@ -13,4 +13,13 @@ div .ui-carousel-viewport {
 
 body .ui-state-disabled, body .ui-dialog-content .ui-widget:disabled {
   opacity: 1;
+}
+
+.ui-dialog-content .ui-dropdown .ui-dropdown-label {
+  padding: 0;
+}
+
+body .ui-dropdown-panel div .ui-dropdown-items .ui-dropdown-item {
+  padding: 0;
+  height: 26px;
 }
